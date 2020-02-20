@@ -1,0 +1,25 @@
+[workspace]
+members = [
+]
+
+[package]
+name = "strophe"
+authors = ["C2Rust"]
+version = "0.0.0"
+publish = false
+edition = "2018"
+autobins = false
+
+[lib]
+name = "strophe"
+path = "strophe.rs"
+crate-type = ["staticlib", "rlib"]
+
+[[bin]]
+doc = false
+name = "basic"
+path = "examples/basic.rs"
+
+[dependencies]
+c2rust-asm-casts = "0.1"
+libc = "0.2"

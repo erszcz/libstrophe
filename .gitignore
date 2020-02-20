@@ -62,3 +62,4 @@ libstrophe.project
 libs/
 obj/
 expat/
+target/
