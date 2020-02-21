@@ -9,5 +9,6 @@ fn main() {
 fn main() {
 
     // add macos dependencies below
-    // println!("cargo:rustc-flags=-l edit");
+    println!("cargo:rustc-flags=-L/usr/local/opt/openssl@1.1/lib -lssl \
+                                -lcrypto -lexpat -lresolv");
 }
